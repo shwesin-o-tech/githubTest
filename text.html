@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+	<div class="container">
+
+        <!-- Textbox Panel-->
+        <div class="form-input">      
+          <input class="input-effect" type="text" placeholder=" ">
+          <span class="highlight"></span>
+          <label>Text</label>
+        </div>
+
+        <!-- Number Textbox -->
+        <div class="form-input">      
+          <input class="input-effect" type="number" placeholder=" ">
+          <span class="highlight"></span>
+          <label>Number</label>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-input">      
+          <textarea class="input-effect input-textarea" placeholder=" "></textarea>
+          <span class="highlight"></span>
+          <label>Textarea</label>
+        </div>
+
+        <!-- Date Textbox -->
+         <div class="form-input">      
+          <input class="input-effect" type="text" onclick="" placeholder=" "  id="datepicker">
+          <span class="highlight"></span>
+          <label>Date</label>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+//Use date picker
+    $(function() {
+        $( "#datepicker" ).datepicker();
+    });
+      
+</script>
